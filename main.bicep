@@ -7,7 +7,7 @@ param upn string
 // before runnnig, this user assigned identity should be created
 // and need to have User Administorator (maybe less previledged roll works) at Entra tenat scope
 @description('the user assignd identity id name')
-var userAssignedIdentityIdName = '/subscriptions/${subscription().subscriptionId}/resourceGroups/rg-roleassignment-id/providers/Microsoft.ManagedIdentity/userAssignedIdentities/mid-roleassign-v2'
+var userAssignedIdentityIdName = '/subscriptions/${subscription().subscriptionId}/resourceGroups/<resource group including your managed id>/providers/Microsoft.ManagedIdentity/userAssignedIdentities/<managed id name>'
 
 @description('the user assignd identity object id')
 var userAssignedIdentityId = ''
